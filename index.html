@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ocean Blue To-Do List</title>
+
+    <link rel="stylesheet" href="normal.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>🌊 Tasks</h1>
+        <p>Plan your day, one task at a time.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="todo-card">
+
+            <div class="card-heading">
+                <h2>My To-Do List</h2>
+                <p>Small steps make big progress.</p>
+            </div>
+
+            <form id="taskForm">
+                <label for="taskInput">Enter your task</label>
+
+                <div class="input-group">
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="What do you need to do?"
+                        maxlength="150"
+                        autocomplete="off"
+                        required
+                    >
+
+                    <button type="submit" class="add-button">
+                        + Add Task
+                    </button>
+                </div>
+            </form>
+
+            <div class="task-summary">
+                <span>My Tasks</span>
+                <span id="taskCount">0 tasks remaining</span>
+            </div>
+
+            <ul id="taskList"></ul>
+
+            <p id="emptyMessage">
+                🌤️ No tasks yet. Add your first task!
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Tasks | Web UI Design Assignment</p>
+    </footer>
+
+</body>
+</html>
